@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LaevatainWPFExtensions")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7bdcca1f930eaca0479742e5a794b3b5f3fe8d52")]
 [assembly: System.Reflection.AssemblyProductAttribute("LaevatainWPFExtensions")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LaevatainWPFExtensions")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
