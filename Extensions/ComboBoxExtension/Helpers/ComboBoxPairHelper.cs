@@ -1,7 +1,8 @@
-﻿using System.Windows.Controls;
-using LaevatainWPFExtensions.ComboBoxExtension.Models;
+﻿using System.Linq;
+using System.Windows.Controls;
+using LaevatainWPFExtensions.Extensions.ComboBoxExtension.Models;
 
-namespace LaevatainWPFExtensions.ComboBoxExtension.Helpers
+namespace LaevatainWPFExtensions.Extensions.ComboBoxExtension.Helpers
 {
     public static class ComboBoxPairHelper
     {
@@ -45,6 +46,49 @@ namespace LaevatainWPFExtensions.ComboBoxExtension.Helpers
         }
 
 
+
+        /// <summary>
+        /// 根据 传入各项依赖实例 与 自定义命名规则 生成 ComboBoxPair 列表
+        /// </summary>
+        /// <typeparam name="T">依赖实例类型</typeparam>
+        /// <param name="nameConverter">自定义命名规则</param>
+        /// <param name="objects">各项依赖实例</param>
+        /// <returns></returns>
+        public static List<ComboBoxPair<T>> CreatePairsList<T>(Func<T, string> nameConverter , params T[] objects)
+        {
+            // 当 nameConverter 为 null 抛出异常
+            ArgumentNullException.ThrowIfNull(nameConverter);
+
+            var pairs = objects ? .Select(
+                ob => new ComboBoxPair<T>(nameConverter(ob) , ob)
+                ).ToList() ?? [];
+
+            return pairs;
+        }
+
+
+
+        /// <summary>
+        /// 根据 传入依赖实例列表 与 自定义命名规则 生成 ComboBoxPair 列表
+        /// </summary>
+        /// <typeparam name="T">依赖实例类型</typeparam>
+        /// <param name="nameConverter">自定义命名规则</param>
+        /// <param name="objects">依赖实例列表</param>
+        /// <returns></returns>
+        public static List<ComboBoxPair<T>> CreatePairsList<T>(Func<T, string> nameConverter, List<T> objects)
+        {
+            // 当 nameConverter 为 null 抛出异常
+            ArgumentNullException.ThrowIfNull(nameConverter);
+
+            var pairs = objects ? .Select(
+                ob => new ComboBoxPair<T>(nameConverter(ob), ob)
+            ).ToList() ?? [];
+
+            return pairs;
+        }
+
+
+
         /// <summary>
         /// 根据 枚举类型的所有枚举值 自动生成 ComboBoxPair 列表
         /// </summary>
@@ -58,6 +102,7 @@ namespace LaevatainWPFExtensions.ComboBoxExtension.Helpers
 
             return pairs;
         }
+
 
 
         /// <summary>

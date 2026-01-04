@@ -1,0 +1,12 @@
+D:\Github\LaevatainWPFExtensions\bin\Debug\net8.0-windows10.0.18362.0\LaevatainWPFExtensions.deps.json
+D:\Github\LaevatainWPFExtensions\bin\Debug\net8.0-windows10.0.18362.0\LaevatainWPFExtensions.dll
+D:\Github\LaevatainWPFExtensions\bin\Debug\net8.0-windows10.0.18362.0\LaevatainWPFExtensions.pdb
+D:\Github\LaevatainWPFExtensions\obj\Debug\net8.0-windows10.0.18362.0\LaevatainWPFExtensions.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\LaevatainWPFExtensions\obj\Debug\net8.0-windows10.0.18362.0\LaevatainWPFExtensions.AssemblyInfoInputs.cache
+D:\Github\LaevatainWPFExtensions\obj\Debug\net8.0-windows10.0.18362.0\LaevatainWPFExtensions.AssemblyInfo.cs
+D:\Github\LaevatainWPFExtensions\obj\Debug\net8.0-windows10.0.18362.0\LaevatainWPFExtensions.csproj.CoreCompileInputs.cache
+D:\Github\LaevatainWPFExtensions\obj\Debug\net8.0-windows10.0.18362.0\LaevatainWPFExtensions.sourcelink.json
+D:\Github\LaevatainWPFExtensions\obj\Debug\net8.0-windows10.0.18362.0\LaevatainWPFExtensions.dll
+D:\Github\LaevatainWPFExtensions\obj\Debug\net8.0-windows10.0.18362.0\refint\LaevatainWPFExtensions.dll
+D:\Github\LaevatainWPFExtensions\obj\Debug\net8.0-windows10.0.18362.0\LaevatainWPFExtensions.pdb
+D:\Github\LaevatainWPFExtensions\obj\Debug\net8.0-windows10.0.18362.0\ref\LaevatainWPFExtensions.dll
